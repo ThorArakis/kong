@@ -19,6 +19,10 @@ env:
     - SERF=0.7.0
     - DNSMASQ=2.75
     - CASSANDRA_HOSTS=127.0.0.1
+    - OPENRESTY_DIR=$HOME/openresty-$OPENRESTY
+    - SERF_DIR=$HOME/serf
+    - DNSMASQ_DIR=$HOME/dnsmasq
+    - LUA_DIR=$HOME/lua
   matrix:
     - TEST_SUITE=unit
     - TEST_SUITE=integration
@@ -42,6 +46,5 @@ cache:
     - $LUA_DIR
     - $SERF_DIR
     - $DNSMASQ_DIR
-    - $LUAROCKS_DIR
     - $OPENRESTY_DIR
     - $HOME/.ccm/repository
